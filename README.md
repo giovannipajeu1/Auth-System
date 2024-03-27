@@ -13,9 +13,9 @@ Sistema de Autenticacao com SSO do Google
 
 - <img align="left" height="20" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg"> **Docker**: Criação Dos Containers
 
-- <img align="left" height="20" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original.svg"> **Golang**: Linguagem Escolhida
+- <img align="left" height="20" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go.svg"> **Golang**: Linguagem Escolhida
 
-- <img align="left" height="20" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg"> **Postgress**: Banco de Dados
+- <img align="left" height="20" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgress/postgress-original.svg"> **Postgress**: Banco de Dados
 
 ### 📋 Pré-requisitos
 
