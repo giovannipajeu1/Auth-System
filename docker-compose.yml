@@ -1,0 +1,38 @@
+version: "3.0"
+
+services:
+  mysql-db:
+   image: mysql:latest
+   networks:
+    - back-end
+   ports:
+     - "3306:3306"
+   volumes:
+     - mysql-data:/var/lib/mysql
+   environment:
+      MYSQL_ROOT_PASSWORD:  ${DB_PASSWORD}
+      MYSQL_ALLOW_EMPTY_PASSWORD: 0
+      MYSQL_RANDOM_ROOT_PASSWORD: 0
+   deploy:
+      restart_policy:
+        condition: on-failure
+
+  api:
+    image: api-back-end/api-back-end:1.0.0
+    networks:
+     - back-end
+    ports: 
+      - "8080:8080"
+    build:
+      context: . 
+      dockerfile: Dockerfile
+    depends_on: 
+      - mysql-db
+    environment:
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+    deploy:
+      restart_policy:
+        condition: on-failure
+   
