@@ -14,14 +14,14 @@ import (
 func ReadUsers(w http.ResponseWriter, r *http.Request) {
 	db, erro := DataBase.Conectar()
 	if erro != nil {
-		w.Write([]byte("Erro ao Conectar no Banco"))
+		w.Write([]byte("Erro ao chegar no Banco"))
 		return
 	}
 	defer db.Close()
 
 	linhas, erro := db.Query("select * from users")
 	if erro != nil {
-		w.Write([]byte("Erro ao Conectar no Banco"))
+		w.Write([]byte("Erro ao Ler  no Banco"))
 		return
 	}
 	defer linhas.Close()
