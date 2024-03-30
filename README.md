@@ -9,7 +9,6 @@ Sistema de Autenticacao com SSO do Google
 
 - <img align="left" height="20" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"> **AWS**: Cloud Provider
 
-- <img align="left" height="20" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ansible/ansible-original.svg"> **Ansible**: Configuração das Máquinas Virtuais
 
 - <img align="left" height="20" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg"> **Docker**: Criação Dos Containers
 
@@ -36,4 +35,3 @@ Como instalar o Docker?
 
 Como instalar o Ansible? 
 <br>
-<a href="https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html">Passo a Passo para instalar o Ansible</a>
