@@ -14,6 +14,8 @@ func main() {
 	router.HandleFunc("/CreateUser", configs.CreateUser).Methods(http.MethodPost)
 	router.HandleFunc("/users", configs.ReadUsers).Methods(http.MethodGet)
 	router.HandleFunc("/users/{id}", configs.ReadUser).Methods(http.MethodGet)
+	router.HandleFunc("/users/{id}", configs.UpdateUser).Methods(http.MethodPut)
+	router.HandleFunc("/users/{id}", configs.DeleteUser).Methods(http.MethodDelete)
 
 	fmt.Println("Servidor na Porta 8080")
 	log.Fatal(http.ListenAndServe(":8080", router))
