@@ -33,5 +33,4 @@ Como instalar o Docker?
 <br>
 <a href="https://docs.docker.com/get-docker/">Passo a Passo para instalar o Docker</a>
 
-Como instalar o Ansible? 
 <br>

@@ -1,6 +1,5 @@
 resource "aws_security_group" "avg_sg_db" {
   name        = "avg_sg_db"
-  description = "Firewall para as EC2 de Banco de Dados"
   vpc_id      = aws_vpc.avg_vpc.id
 
   ingress {

@@ -1,6 +1,5 @@
 resource "aws_security_group" "avg_sg_web" {
   name        = "avg_sg_web"
-  description = "Firewall para as EC2  WEB"
   vpc_id      = aws_vpc.avg_vpc.id
 
   ingress {
